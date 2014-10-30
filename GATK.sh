@@ -91,24 +91,25 @@ echo "Reference genome is now ready for GATK."
 ###############################################################
 ## Summary Statistics
 
-#$PICARD/MeanQualityByCycle.jar \
-#INPUT=$BAM \
-#CHART_OUTPUT=mean_quality_by_cycle.pdf \
-#OUTPUT=read_quality_by_cycle.txt \
-#REFERENCE_SEQUENCE=$REFERENCE
-#
-#$PICARD/QualityScoreDistribution.jar \
-#INPUT=$BAM \
-#CHART_OUTPUT=mean_quality_overall.pdf \
-#OUTPUT=read_quality_overall.txt \
-#REFERENCE_SEQUENCE=$REFERENCE
-#
-#
-#$PICARD/CollectWgsMetrics.jar \
-#INPUT=$BAM OUTPUT=stats_picard.txt \
-#REFERENCE_SEQUENCE=$REFERENCE \
-#MINIMUM_MAPPING_QUALITY=20 \
-#MINIMUM_BASE_QUALITY=20
+$PICARD/MeanQualityByCycle.jar \
+INPUT=$BAM \
+CHART_OUTPUT=mean_quality_by_cycle.pdf \
+OUTPUT=read_quality_by_cycle.txt \
+REFERENCE_SEQUENCE=$REFERENCE
+
+
+$PICARD/QualityScoreDistribution.jar \
+INPUT=$BAM \
+CHART_OUTPUT=mean_quality_overall.pdf \
+OUTPUT=read_quality_overall.txt \
+REFERENCE_SEQUENCE=$REFERENCE
+
+
+$PICARD/CollectWgsMetrics.jar \
+INPUT=$BAM OUTPUT=stats_picard.txt \
+REFERENCE_SEQUENCE=$REFERENCE \
+MINIMUM_MAPPING_QUALITY=20 \
+MINIMUM_BASE_QUALITY=20
 
 
 
