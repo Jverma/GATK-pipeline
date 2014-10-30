@@ -22,9 +22,9 @@ GATK="java -jar /programs/bin/GATK/GenomeAnalysisTK.jar"
 #   FILES 
 # Aligned BAM file, reference FASTA file and VCF file of known variants. 
 
-BAM="I961632_H9WVUADXX.bam"
-REFERENCE="cassavaV5_NumericAndChr19.fa"
-KNOWN="KnownSitesAll.vcf"
+BAM="aligned_file.bam"
+REFERENCE="reference_genome.fa"
+KNOWN="known_sites.vcf"
 
 
 #####################################################################
