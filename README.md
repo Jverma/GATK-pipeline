@@ -20,6 +20,9 @@ A shell script which implements GATK pipeline for variant calling. Creates a <a 
 
     file_name_output.raw.snps.indels.g.vcf
     
+    
+GATK.pdf contains the explanation of the mathematics behind GATK-HaplotypeCaller.     
+    
 
 
 
